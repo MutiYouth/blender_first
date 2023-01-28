@@ -34,13 +34,15 @@ F:\DS\_ws\blender\3.4\python\bin>.\python.exe -m pip install pydevd-pycharm~=223
 Examples
 https://blog.csdn.net/qq_43331089/article/details/123397323
 """
+pydevd_pycharm.settrace('localhost', port=1091, stdoutToServer=True, stderrToServer=True)
 
-pydevd_pycharm.settrace('localhost', port=1090, stdoutToServer=True, stderrToServer=True)
 
 # 随机创建100个cube，x/y/z范围限制（-30，30）
 number = 100
 for i in range(0, number):
+    print(i)
     x = randint(-30, 30)
     y = randint(-30, 30)
     z = randint(-30, 30)
     bpy.ops.mesh.primitive_cube_add(location=(x, y, z))
+
