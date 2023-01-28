@@ -29,11 +29,14 @@ https://zhuanlan.zhihu.com/p/595184674
 F:\DS\_ws\blender\3.4\python\bin>.\python.exe -m pip install pydevd-pycharm~=223.7571.182
 在 D:\Pros\IDE\Cache\.IntelliJIdea2019.2\config\plugins\python\debugger-eggs-output 中找到 pydevd-pycharm.egg
 
+C:\Users\Administrator\AppData\Roaming\Blender Foundation\Blender\3.4\scripts\addons
 
 
 Examples
 https://blog.csdn.net/qq_43331089/article/details/123397323
 https://www.zhihu.com/question/315063917
+F:\DS\_ws\blender\3.4\scripts\addons\add_camera_rigs
+https://github.com/NumesSanguis/FACSvatar-Blender/blob/master/__init__.py
 """
 pydevd_pycharm.settrace('localhost', port=1091, stdoutToServer=True, stderrToServer=True)
 
