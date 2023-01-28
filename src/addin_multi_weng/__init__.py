@@ -1,7 +1,7 @@
 bl_info = {
-    "name": "WENG2 ADD Object",
-    "author": "WENG U",
-    "version": (0, 1, 0),
+    "name": "WENG ADD Object",
+    "author": "WENG L",
+    "version": (0, 2, 0),
     "blender": (3, 4, 0),
     "location": "View3D > Add > Mesh > New Object",
     "description": "Adds a new Mesh Object",
@@ -13,17 +13,8 @@ bl_info = {
 import bpy
 import os
 
-if "bpy" in locals():
-    print("reloading .py files")
-    import importlib
-
-    from . import add_plane
-    importlib.reload(add_plane)
-# first time loading add-on
-else:
-    print("importing .py files")
-    import bpy
-    from . import add_plane
+from . import add_plane
+from . import add_cube
 
 
 # =========================================================================
@@ -33,10 +24,12 @@ else:
 
 def register():
     add_plane.register()
+    add_cube.register()
 
 
 def unregister():
     add_plane.unregister()
+    add_cube.unregister()
 
 
 if __name__ == "__main__":
