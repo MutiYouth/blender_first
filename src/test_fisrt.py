@@ -33,6 +33,7 @@ F:\DS\_ws\blender\3.4\python\bin>.\python.exe -m pip install pydevd-pycharm~=223
 
 Examples
 https://blog.csdn.net/qq_43331089/article/details/123397323
+https://www.zhihu.com/question/315063917
 """
 pydevd_pycharm.settrace('localhost', port=1091, stdoutToServer=True, stderrToServer=True)
 
